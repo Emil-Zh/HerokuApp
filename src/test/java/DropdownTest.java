@@ -30,6 +30,7 @@ public class DropdownTest {
         WebElement dropdownElement = driver.findElement(By.id("dropdown"));
         Select dropdown = new Select(dropdownElement);
         List<WebElement> options = dropdown.getOptions();
+        //Сначала думал сделать так
 //        for (int i = 1; i < options.size(); i++){
 //            softAssert.assertEquals(options.get(i).getText(), "Option " + i , "Option " +i + " has a wrong name");
 //        }

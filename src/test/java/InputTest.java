@@ -37,7 +37,7 @@ public class InputTest {
         softAssert.assertEquals(input.getAttribute("value"), "100", "Input should have decreased by 1 and become 100");
         input.clear();
         input.sendKeys("string");
-        softAssert.assertTrue(input.getAttribute("value").isEmpty(),"Input should have been null");
+        softAssert.assertTrue(input.getAttribute("value").isEmpty(),"Input should have been empty");
         softAssert.assertAll();
     }
 
